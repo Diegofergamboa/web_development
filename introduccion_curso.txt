@@ -1,0 +1,49 @@
+'''
+    Al comienzo de las paginas web eran muy basicas,ya que no generaban dinamismo
+    Javascript convirtio en interaccione smejoras al contenido en plataformas
+    ESta orientado en desarrollo web, para hacer aplicaciones web
+    Lenguaje interpretado =
+    Orientado a objetos  = Como es el caso de usuarios 
+    debilmente tipado = Es es decir que nos permite realizar sumas y demas con strings, booleanos y, int    
+    dinamico = Que se puede probar cuand se pone en la Web = Es decir no es necesario compilarlo 
+    *****
+    Que es un motor de Javascript
+    *****
+    Que es Backward.
+    ES un Backward COmpatible, no habra comptabiliddad con otras versiones.
+    Que es forward
+    Ser compatible con versiones futuras
+
+    Compilador Babel = Ayuda a ver entre versiones de Javascript
+
+
+    Script significa que el programa no necesita compilacion, permite crear elementos interactivos
+    para mejorar datos dinàmicos. Son mejoras que se producen a HTML. Su codigo se puede ejecutar directamente desde los navegadores
+    Biblioteca es un conjunto de funciones que podemos obtener principalmente de manera gratuita
+    J Query Midernizr
+
+    La etiqueta Script es un trozo de codigo javascript, lo unico que hace es indicarle al navegador
+    Se encuentra con naturalidad con codigo HTML, es un lenguaje sencillo y bastante extendido.
+
+    *****
+
+
+    HTML se puede hacer para maquetar y poner informacion a las paginas
+    CSS Para estilos
+    JS para generar una aplicacion web y poner dinamismo
+
+    W3E = WA (Web Assembly)
+
+    Frameworks o librerias en JavaScript que se permiten hacer productos Web de buena manera
+    React Native = Para android y iOS 
+    Electron = Tiene para aplicaciones en escritorio
+    Backen y IoT = Back-End = Manejando las bases de datos y las aplicaciones que se requieren.
+    
+    ******
+'''
+
+
+
+
+
+
