@@ -1,0 +1,30 @@
+' Es el alcance que tienen las variables ' 
+' Lo que està en el local puede acceder al global, pero el global no puede acceder al local '
+' Es algo parecido al principio de Polimorfismo ' 
+
+
+var miNoombre = "Diego " // Este es el ambiente global
+
+function nombre(){
+  var miApellido = "Ortiz Gamboa";
+  console.log(miNoombre + "" + miApellido); // Este es el ambiente local
+}
+
+nombre();
+
+'Entender el concepto de Scope nos brindarà dos herramientas: (i) que el codigo va a tener partes ocultas y,
+(ii), que el codigo va a ser mas robusto aprovechando la deteccion y disminuciòn de errores.
+
+Global Scope = Este hace referencia a que una variable esta inicializada en el entorno global del script
+Local Scope = Son las variables que se inicializan especificamente dentro de una linea de còdigo en especìfico
+
+
+# IMPORTANTE.
+    Es necesario de forma casi obligatoria, el reemplazar la palabra var por palabra 'let' cuando las variables
+    que pueda ser modificadas en un futuro y, 'const' para las varibales que vayamos a reasignar.
+    Es decir, **Hay que evitar usar la palabra VAR*
+
+
+
+
+
