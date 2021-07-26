@@ -4,21 +4,22 @@
 // Estos tipos de variables tienen distintos usos
 // para las variables de tipo  var, son las variables que comunmente se usan
 
-// /* VARIABLES VAR */
-// var variable1 = "" ;
-// var variable1 = 16 ;
-// console.log(variable1)
+/* VARIABLES VAR */
+
+var variable1 = "" ;
+var variable1 = 16 ;
+console.log(variable1)
 
 // /* VARIABLES LET */
 
-// function variable2 (variable2) { // Se usan generalmente para liberar espacio en disco y para liberar espacio más rápido 
-//     let variable = "2" ; // Carga solamente de manera temporal y se guarda por un corto espacio de tiempo
-//     return console.log(variable) ; // Y, cuando termina su ejecución en el CONTEXTO, esta se borra
-// }
-// // variable2()
+function variable2 (variable2) { // Se usan generalmente para liberar espacio en disco y para liberar espacio más rápido 
+    let variable = "2" ; // Carga solamente de manera temporal y se guarda por un corto espacio de tiempo
+    return console.log(variable) ; // Y, cuando termina su ejecución en el CONTEXTO, esta se borra
+}
+variable2()
 
-// console.log(variable2) // En este caso se puede observar que en definitica va a imprimir en sí la función más no el valor de la variable
-// console.log(variable)
+console.log(variable2) // En este caso se puede observar que en definitica va a imprimir en sí la función más no el valor de la variable
+console.log(variable)
 
 
 /* VARIABLES CONST */
@@ -34,4 +35,4 @@ const ID_API = 26 ;
 // cuando son constantes para casos de variables que no van a cambiar 
 // es importante también tratar de declararlas siempre en mayusculas como buena práctica
 
-console.log(`${URL_API}/${VERSION_API}/${ID_API}/`) ;
+console.log(`${URL_API}/${VERSION_API}/${ID_API}/`) ; // Ejemplo de uno de usos más conocidos de las apis
