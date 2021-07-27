@@ -26,3 +26,6 @@ console.log(economia.macroeconomia) ;
 
 // Acceder al tercer objeto 
 console.log(economia.macroeconomia.econometria_avanzada)
+
+
+
