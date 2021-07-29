@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08 - arrays</title>
+	<meta name="author" content="francesc ricart"/>
+</head>
+<body>
+
+<script>
+	var amigos  = ["pedro","maria","joan","pili"];
+	
+	// 1- queremos que escriba "mis amigos son maria y joan. rellena los huecos."
+	console.log("mis amigos son"+ "<b>" + amigos[1] + "</b>" + "  y <b>" + amigos[2]+"</b>");
+
+	// 2- ¿dónde está el fallo?
+	var enemigos = ["scipion" , "scorpio" , "black"];
+
+	// 3- escribe en el documento web "scorpio es peor que black" de modo que scorpio esté en negrita y la letra sea de color rojo.
+
+    console.log(enemigos[1], " es peor que " + enemigos[2])
+
+	// 4- escribe una instrucción que devuelva la longitud del array amigos sea cual sea el número de datos almacenados en su interior.
+    
+    amigos_lenght = amigos.length
+    console.log("la cantidad de amigos son: " + amigos_lenght)
+
+	// 5- "aitana" es también tu amiga. Escribe una instrucción que la añada al final de la lista amigos 
+
+    amigos.push("aitana") 
+    
+
+	// 6 - "pedro" ha cambiado de nombre. ahora se llama "nacho". actualiza con una instrucción tu lista de amigos
+
+    amigos[0] = "nacho"
+    console.log(amigos)
+
+	// 7 - "tor" es ahora tu enemigo. añádelo con una instruccion al final de tu lista de enemigos.
+    
+    enemigos.push("tor")
+    console.log(enemigos)
+
+</script>
+
+
+</body>
+</html>
