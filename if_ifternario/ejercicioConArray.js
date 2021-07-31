@@ -90,3 +90,7 @@ if (OperadoresColombiaInternet[0]) {
     console.log("No aplica tecnología 5G") ;
 }
 
+
+/* IF tenario */
+
+// console.log(`${OperadoresColombia[0]} OperadoresColombia[0] ? " tendrá 5G " : " no tendrá 5G " `) ;
