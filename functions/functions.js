@@ -1,22 +1,24 @@
-// Función que de por respuesta la suma de dos numeros con return 
+// Función que de por respuesta la suma de dos numeros con return.
 
-// function suma (a, b) {
-//     let total =  a + b ;
-//     return console.log(total) ;
-// } ;
+function suma (a, b) {
+    let total =  a + b ;
+    return console.log(total) ;
+} ;
 
-// suma(1, 2);
+suma(1, 2);
 
-// function tablaMultiplicar (numero) {
-//     for(let n = 0 ; n <= 10 ; n ++) {
-//         let total = n * numero ;
-//         console.log(`${n} x ${numero} = ${total}`) ;
-//     }
-// }
+// Función que devuelva la tabla de multiplicar.
 
-// tablaMultiplicar(1);
+function tablaMultiplicar (numero) {
+    for(let n = 0 ; n <= 10 ; n ++) {
+        let total = n * numero ;
+        console.log(`${n} x ${numero} = ${total}`) ;
+    }
+}
 
-// Función que regrese la edad según el año de nacimiento 
+tablaMultiplicar(1);
+
+// Función que regrese la edad según el año de nacimiento.
 
 function bornYear (year) {
     date = new Date ;
