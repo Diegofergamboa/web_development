@@ -25,5 +25,5 @@ console.log(ApiCharacters[0]);
 
 // Por ejemplo, voy a buscar a Rick en específico, el cuál tiene como id el numero 1.
 
-const first_character = ApiCharacters => ApiCharacters.filter(ApiCharacters.id === 1);
+const first_character = ApiCharacters => ApiCharacters.filter(ApiCharacters.id === 1); // basicamente con uan función arrow se realiza la ejecución correcta del filter, al igual que del map()
 console.log(first_character);
