@@ -1,3 +1,5 @@
+/* Objeto con personajes */
+
 const ApiCharacters = [
     {
         id : 1 ,
@@ -28,9 +30,35 @@ const ApiCharactersJSON = JSON.stringify(ApiCharacters); // Ahora va a existir u
 // convertir el objeto de JSON a OBJETO again
 
 const Api_retorn_Characters = JSON.parse(ApiCharactersJSON);
+console.log(Api_retorn_Characters.length)
+// Filtrar por id según lo que el usuario diga de nombre entre los 4 que están
+// Darlo en consola
 
-// Voy a reemplazar las url, para estudiar el método .replace()
+const api_result = Api_retorn_Characters.filter(character => character.id === 1); //Forma correcta de hacer un filter
 
 
 
-// console.log(ApiCharactersJSON); 
+// Usar el método setTime out para decir que se esta procesando el reemplazamiento de la url
+
+function changeUrl () { 
+
+    // Comienzo de la función 
+    console.log("Vamos a cambiar la url de cada personaje") ;
+    console.log("Urls anteriores = ") ;
+
+    // Espera de tiempo para simular ejecucion de cambio de url 
+    setTimeout ( () => {
+        console.log("...Procesando las nuevas url...") ;
+        return printOldUrl() ;
+    },2000)
+    debugger
+    // Función que imprime por pantalla la url anterior de cada personaje 
+    function printOldUrl (Api_retorn_Characters) {
+        for (let i = 0 ; i <= Api_retorn_Characters.length ; i ++) debugger {
+            console.log(Api_retorn_Characters[i]) ;
+            debugger
+        }
+    };
+};
+
+changeUrl()
