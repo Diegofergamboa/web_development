@@ -19,9 +19,11 @@ const ApiCharacters = [
     {
         id : 4 ,
         name: "Davin" ,
-        image: "https/www.google.com/davin/"
+        image : "www/google.com/davin.es/"
     }
 ];
+
+
 
 // convertir el objeto a JSON
 
@@ -30,35 +32,45 @@ const ApiCharactersJSON = JSON.stringify(ApiCharacters); // Ahora va a existir u
 // convertir el objeto de JSON a OBJETO again
 
 const Api_retorn_Characters = JSON.parse(ApiCharactersJSON);
-console.log(Api_retorn_Characters.length)
+// console.log(Api_retorn_Characters.length);
 // Filtrar por id según lo que el usuario diga de nombre entre los 4 que están
-// Darlo en consola
+// Printearlo en consola
 
 const api_result = Api_retorn_Characters.filter(character => character.id === 1); //Forma correcta de hacer un filter
 
 
-
 // Usar el método setTime out para decir que se esta procesando el reemplazamiento de la url
 
-function changeUrl () { 
+function oldUrl () { 
 
     // Comienzo de la función 
     console.log("Vamos a cambiar la url de cada personaje") ;
     console.log("Urls anteriores = ") ;
+    console.log("##########################################");
+    return printOldUrl() ; 
 
-    // Espera de tiempo para simular ejecucion de cambio de url 
-    setTimeout ( () => {
-        console.log("...Procesando las nuevas url...") ;
-        return printOldUrl() ;
-    },2000)
-    debugger
-    // Función que imprime por pantalla la url anterior de cada personaje 
-    function printOldUrl (Api_retorn_Characters) {
-        for (let i = 0 ; i <= Api_retorn_Characters.length ; i ++) debugger {
-            console.log(Api_retorn_Characters[i]) ;
-            debugger
-        }
+    // Funcion que printea en consola cada uno de los elementos del array sin haber cambiado la URL
+    function printOldUrl () {
+        Api_retorn_Characters.forEach(i => {
+            console.log(i.image) ;
+        });      
     };
+
 };
 
-changeUrl()
+
+// Función que reemplaza la anterior URL de imagen por la nueva url de imagen
+function d_replace () {
+    Api_retorn_Characters.forEach ( element => {
+        c = element.image ;
+        c = c.replace(c, "new url coming soon") ;
+        return console.log(c) ;
+    })
+}
+
+
+
+oldUrl();
+d_replace();
+
+const newUrl = [ "www/google.com/rick.COM", "www/google.com/morty.COM/", "www/google.com/candas.COM/", "www/google.com/davin.COM/"]
