@@ -1,0 +1,15 @@
+.contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: black solid;
+    flex-basis: 1000px;
+}
+.contenedor p {
+    border: 5px solid black;
+}   
+
+#item1 {
+
+    background-color: blue;
+}
